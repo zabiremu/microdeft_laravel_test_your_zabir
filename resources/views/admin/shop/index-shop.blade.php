@@ -20,6 +20,14 @@
                                     <td>{{ $shop->name }}</td>
                                     <td><a href="{{ route('shop.edit', $shop->id) }}" class="btn btn-info btn-sm">Edit</a>
                                     </td>
+                                    <td>
+                                        <form action="{{ route('shop.destroy', $shop->id) }}" method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </form>
+
+                                    </td>
                                 </tr>
                             @empty
                             @endforelse
