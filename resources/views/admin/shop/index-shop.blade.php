@@ -18,7 +18,7 @@
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>{{ $shop->name }}</td>
-                                    <td><a herf="{{ route('shop.edit', $shop->id) }}" class="btn btn-info btn-sm">Edit</a>
+                                    <td><a href="{{ route('shop.edit', $shop->id) }}" class="btn btn-info btn-sm">Edit</a>
                                     </td>
                                 </tr>
                             @empty
