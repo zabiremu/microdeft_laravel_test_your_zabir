@@ -13,7 +13,7 @@
                             class="form-control @error('name')
                             is-invalid
                         @enderror"
-                            id="name" name="name">
+                            id="name" name="name" value="{{ $shop->name }}">
                         @error('name')
                             <span class="text-danger">{{ $message }}</span>
                         @enderror
